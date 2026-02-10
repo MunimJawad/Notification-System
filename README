@@ -1,0 +1,30 @@
+# 🔔 Real-Time Notification System
+
+A standalone **real-time notification system** built with **Django, Django REST Framework, and Django Channels**, with Redis as the channel layer and Daphne as the ASGI server.  
+This system can be integrated with any backend (like a ticketing system, eCommerce platform, or social app) to notify users instantly about important events.
+
+---
+
+## 🚀 Features
+
+- Send notifications in real-time via WebSockets
+- Redis-backed channel layer for scalability
+- Support for multiple users and groups
+- Event-driven design: Notifications can be triggered by signals
+- Read/unread notifications support
+- Easy integration with other projects
+
+---
+
+## 🏗️ Tech Stack
+
+- **Backend:** Python, Django, Django REST Framework
+- **Real-Time:** Django Channels, WebSockets
+- **Message Broker:** Redis
+- **ASGI Server:** Daphne
+- **Frontend (for demo/testing):** JavaScript, Fetch API, modals (can integrate with Laravel or any frontend)
+
+---
+
+## 🧠 System Architecture
+
