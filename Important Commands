@@ -1,0 +1,1 @@
+Run project with Daphne: python -m daphne project(project_name).asgi:application
