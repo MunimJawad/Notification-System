@@ -1,0 +1,217 @@
+1️⃣ High-Level Requirements
+
+Functional Requirements:
+
+User registration & login (roles: user, agent, admin)
+
+Ticket creation, update, delete
+
+Ticket assignment to agents
+
+Ticket status tracking (open, in progress, solved, closed)
+
+Notification system:
+
+Ticket created → notify relevant users
+
+Ticket updated → notify relevant users
+
+Real-time updates (WebSocket / polling)
+
+Notifications persisted in DB
+
+Ticket search, filtering, pagination
+
+Non-Functional Requirements:
+
+Scalable (can handle many users & tickets)
+
+Secure (role-based access control)
+
+Responsive frontend (Laravel)
+
+Async tasks for heavy operations
+
+Audit/logging of ticket changes
+
+2️⃣ Overall Architecture
++------------------+          +------------------+
+|   Laravel Front  |  <-----> |  Django REST API |
+|  (Blade + JS)    |  HTTP   |  + Channels      |
++------------------+          +------------------+
+         |                            |
+         | WebSocket (Real-time)      |
+         |--------------------------->|
+         |                            |
+         |                            |
+         v                            v
+   Users Browser                 Redis (Channel Layer)
+                                   |
+                                   v
+                             Notification DB
+                             Ticket DB
+
+
+Frontend (Laravel): consumes Django APIs, shows ticket list, modals, notifications.
+
+Backend (Django): business logic, REST APIs, WebSockets (Django Channels), queues.
+
+Redis: pub/sub for real-time events, queues.
+
+Database: PostgreSQL/MySQL, stores tickets, users, notifications.
+
+3️⃣ Database Design
+Users Table
+id | username | email | password | role (user/agent/admin) | created_at | updated_at
+
+Tickets Table
+id | title | description | status | priority | created_by | assigned_to | created_at | updated_at
+
+Notifications Table
+id | user_id | type | title | message | ticket_id | is_read | created_at
+
+Optional Audit Table
+id | ticket_id | action | performed_by | old_value | new_value | created_at
+
+4️⃣ API Design (Django)
+Endpoint	Method	Description	Auth
+/api/tickets/	GET	List tickets (pagination, filter)	JWT
+/api/tickets/	POST	Create ticket	JWT
+/api/tickets/{id}/	GET	Ticket detail	JWT
+/api/tickets/{id}/	PUT/PATCH	Update ticket	JWT + RBAC
+/api/tickets/{id}/	DELETE	Delete ticket	JWT + RBAC
+/api/notifications/	GET	List user notifications	JWT
+/api/notifications/{id}/read/	POST	Mark as read	JWT
+
+Notes:
+
+Frontend calls these APIs.
+
+Real-time updates via WebSocket, no need for constant polling.
+
+5️⃣ Notification Flow Design
+Event → Listener → Job Pattern
+
+Event Trigger
+
+Ticket created → TicketCreatedEvent
+
+Ticket updated → TicketUpdatedEvent
+
+Listener
+
+CreateNotificationListener listens to event
+
+Creates DB notification
+
+Sends WebSocket message via Django Channels
+
+Job (Optional for scaling)
+
+If many users, push notification in background job
+
+Can use Celery + Redis or Django-Q
+
+Flow Diagram:
+
+[Ticket Created/Updated] 
+        ↓
+      Event
+        ↓
+     Listener
+        ↓
+   Create DB Notification
+        ↓
+  Send WebSocket Event
+        ↓
+   Laravel Frontend shows it
+
+6️⃣ Frontend Design (Laravel)
+
+Ticket List Page
+
+Fetch tickets via API
+
+Show status, assigned agent, modals for edit
+
+Ticket Detail Page
+
+Show ticket info
+
+Show comments (if implemented)
+
+Notification System
+
+Bell icon in navbar
+
+Dropdown list from API /notifications/
+
+Real-time alert via WebSocket (toast / modal)
+
+Mark as read on click
+
+7️⃣ Real-time Implementation
+
+WebSocket server (Django Channels):
+
+Connect user to user_{id} group
+
+Frontend JS
+
+Listen for WebSocket events
+
+Update notification badge & list dynamically
+
+Redis
+
+Acts as pub/sub layer
+
+Manages events between Django Channels and consumers
+
+8️⃣ Role-Based Access Control
+Role	Can Create	Can Update	Can Delete	Can Assign
+User	✅	❌	❌	❌
+Agent	✅	✅ (assigned)	❌	❌
+Admin	✅	✅	✅	✅
+
+Enforced at API level in Django
+
+Frontend hides buttons if no permission
+
+9️⃣ Scaling Considerations
+
+Redis: handles WebSocket messages efficiently
+
+Async Jobs: notifications, emails, reports → offload
+
+Database Indexing: tickets and notifications
+
+Pagination: prevents large data load
+
+Caching: frequently accessed ticket lists
+
+🔟 Final Steps Before Implementation
+
+Finalize DB schema → users, tickets, notifications
+
+Design REST APIs → CRUD + notification endpoints
+
+Design Event → Listener → Job flow
+
+Set up Redis + Django Channels for WebSockets
+
+Laravel JS frontend → connect WebSocket, API calls
+
+RBAC & authentication → JWT or token-based
+
+Testing
+
+Unit tests for API
+
+WebSocket tests for real-time updates
+
+Future-Proofing
+
+Add email/push notifications later
+
+Queue-based jobs for scaling
