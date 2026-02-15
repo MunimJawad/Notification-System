@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,6 +63,7 @@ REST_FRAMEWORK = {
 
 ROOT_URLCONF = 'project.urls'
 CORS_ALLOW_ALL_ORIGINS = True
+AUTH_USER_MODEL = "base.User"
 
 TEMPLATES = [
     {
@@ -78,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-ASGI_APPLICATION = 'base.asgi.application'
+ASGI_APPLICATION = 'project.asgi.application'
 
 
 # Database
