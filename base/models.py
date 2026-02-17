@@ -64,6 +64,38 @@ class Notifications(SoftDeleteModel):
 
     def __str__(self):
         return f"{self.title}"
+    
+class Audit(SoftDeleteModel):
+    ACTION_CHOICES = [
+        ('insert', 'Insert'),
+        ('update', 'Update'),
+        ('delete', 'Delete'),
+        ('restore', 'Restore'),
+        ('archive', 'Archive'),
+    ]
+
+    ticket = models.ForeignKey(Ticket, related_name="audits", on_delete=models.CASCADE)
+    action = models.CharField(max_length=10, choices=ACTION_CHOICES)
+    performed_by = models.ForeignKey(User, related_name="audits", on_delete=models.CASCADE)
+    old_value = models.TextField(null=True, blank=True)
+    new_value = models.TextField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
+        indexes = [
+            models.Index(fields=['ticket', '-created_at']),
+            models.Index(fields=['performed_by', '-created_at']),
+            models.Index(fields=['action'])
+        ]
+
+    def __str__(self):
+        return f"{self.ticket.id} ----- {self.action}---by {self.performed_by} ----at {self.created_at}"
+    
+
+    
 
 
 
