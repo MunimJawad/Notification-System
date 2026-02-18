@@ -1,15 +1,21 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-
+from drf_spectacular.utils import extend_schema_view
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated,IsAdminUser
 from rest_framework.response import Response
 from rest_framework import status
 from . import serializers
+from .utils import schema_for_method
 
 def test(request):
     return render(request, 'test.html')
 
+
+@extend_schema_view(
+    post=schema_for_method(summary="Create New User",description="Register new user here",request=serializers.CreateUserSerializer,responses=serializers.CreateUserSerializer,tags=["User Management"]),
+            
+)
 class CreateUserView(APIView):
     permission_classes = [IsAuthenticated]
     def post(self, request):

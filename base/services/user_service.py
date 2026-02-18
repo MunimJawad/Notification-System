@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-
+from rest_framework.exceptions import PermissionDenied
 User = get_user_model()
 
 def create_user_service(username, email, password, role, created_by):
@@ -27,4 +27,4 @@ def create_user_service(username, email, password, role, created_by):
            return user
         
     else:
-        raise PermissionError("Only admin users can create new users")
+        raise PermissionDenied("Only admin users can create new users")

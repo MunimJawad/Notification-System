@@ -41,8 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'base',
     'rest_framework',
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
     'channels',
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -58,21 +61,45 @@ MIDDLEWARE = [
 ]
 
 REST_FRAMEWORK = {
-     'DEFAULT_PERMISSION_CLASSES': [
+
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+
+    'DEFAULT_PERMISSION_CLASSES': [
         
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
+
 }
 
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),  # Access token lifetime
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=180),  # Access token lifetime
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),  # Refresh token lifetime
     'ROTATE_REFRESH_TOKENS': True,  # Whether to rotate refresh tokens on use
     'BLACKLIST_AFTER_ROTATION': True,  # Optional: Blacklist the old refresh token after rotation
 }
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Notification System API',
+    'DESCRIPTION': 'API documentation for Notification System',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+
+    'SECURITY': [{'BearerAuth': []}],
+
+    'COMPONENTS': {
+        'securitySchemes': {
+            'BearerAuth': {
+                'type': 'http',
+                'scheme': 'bearer',
+                'bearerFormat': 'JWT',
+            }
+        }
+    },
+}
+
 
 ROOT_URLCONF = 'project.urls'
 CORS_ALLOW_ALL_ORIGINS = True
