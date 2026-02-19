@@ -1,0 +1,178 @@
+1. Storing the Access Token in an HTTP-Only Cookie
+
+You can indeed store your JWT access token in an HTTP-only cookie for added security. This ensures that the token isn't accessible via JavaScript (i.e., it’s not vulnerable to XSS attacks). The cookie will be sent automatically with every request to the server, making it convenient for authentication.
+
+Why use HTTP-Only Cookies?
+
+Secure and HttpOnly: This ensures that the JWT is not accessible from JavaScript on the client side, which helps mitigate attacks like cross-site scripting (XSS).
+
+Automatic inclusion with requests: Since cookies are automatically sent with every HTTP request to the same domain, you don't have to manually attach the token in headers each time.
+
+Example of setting the cookie in a Django view:
+
+from django.http import JsonResponse
+from django.contrib.auth import authenticate, login
+from datetime import timedelta
+from django.conf import settings
+
+def set_jwt_cookie(response, access_token, refresh_token):
+    # Set Access Token in an HTTP-only cookie
+    response.set_cookie(
+        'access_token',
+        access_token,
+        httponly=True,
+        max_age=settings.SIMPLE_JWT['ACCESS_TOKEN_LIFETIME'],
+        secure=True,  # Should be True in production (forces HTTPS)
+        samesite='Strict'  # Helps mitigate CSRF
+    )
+    # Set Refresh Token in an HTTP-only cookie
+    response.set_cookie(
+        'refresh_token',
+        refresh_token,
+        httponly=True,
+        max_age=settings.SIMPLE_JWT['REFRESH_TOKEN_LIFETIME'],
+        secure=True,  # Should be True in production (forces HTTPS)
+        samesite='Strict'
+    )
+    return response
+
+2. Using Refresh Tokens to Create Access Tokens
+
+JWTs usually consist of two parts:
+
+Access Token: Used for authenticating API requests. It expires quickly (e.g., 15 minutes).
+
+Refresh Token: Used to request a new access token after the old one expires. It has a longer lifetime (e.g., 7 days).
+
+When the access token expires, the client can send the refresh token to an endpoint (e.g., /refresh-token/) to get a new access token. This keeps the user session alive without requiring the user to re-login. The refresh token is also stored in an HTTP-only cookie.
+
+Here’s how you can manage token refresh logic:
+
+When the access token is about to expire or has already expired, the client (front-end) can check the token expiration time and send the refresh token in a request to get a new access token.
+
+Example Workflow:
+
+Access Token Expiry: The client tracks the expiration time of the access token and before it expires, it sends a request to the server with the refresh token to get a new access token.
+
+Access Token Refresh Logic:
+
+If the access token has expired, the server checks the refresh token.
+
+If the refresh token is valid and hasn’t expired, the server issues a new access token.
+
+If the refresh token is invalid or expired, the user is logged out, and they must log in again.
+
+Example refresh token endpoint (Django view):
+
+from rest_framework_simplejwt.tokens import RefreshToken
+from django.conf import settings
+from django.http import JsonResponse
+
+def refresh_access_token(request):
+    # Get the refresh token from the HTTP-only cookie
+    refresh_token = request.COOKIES.get('refresh_token')
+    
+    if not refresh_token:
+        return JsonResponse({"error": "Refresh token missing"}, status=400)
+    
+    try:
+        # Create a RefreshToken object from the refresh token string
+        refresh = RefreshToken(refresh_token)
+        # Create a new access token from the refresh token
+        access_token = refresh.access_token
+        
+        # Set the new access token in an HTTP-only cookie
+        response = JsonResponse({"access_token": str(access_token)})
+        response.set_cookie(
+            'access_token', 
+            str(access_token), 
+            httponly=True, 
+            max_age=settings.SIMPLE_JWT['ACCESS_TOKEN_LIFETIME'],
+            secure=True, 
+            samesite='Strict'
+        )
+        return response
+    
+    except Exception as e:
+        return JsonResponse({"error": "Invalid refresh token"}, status=401)
+
+3. Tracking User Activity
+
+To keep the user's session alive based on activity, you'll want to track user activity (e.g., every request or certain user actions). If the user is active, you can refresh their access token before it expires.
+
+How to track activity:
+
+Middleware: Use middleware to update the user's last_activity_time (or similar field) on every request. If you're tracking activity, you can check if the access token is close to expiration and refresh it before it expires.
+
+Here’s how the middleware can be structured:
+
+from django.utils import timezone
+from datetime import timedelta
+from rest_framework_simplejwt.tokens import RefreshToken
+from django.conf import settings
+from django.http import JsonResponse
+
+class ActivityTimeoutMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        # Update last activity time on each request
+        if request.user.is_authenticated:
+            # Update last activity timestamp in the database
+            request.user.last_activity_time = timezone.now()
+            request.user.save()
+            
+            # Check if the access token is nearing expiry
+            access_token = request.COOKIES.get('access_token')
+            if access_token:
+                try:
+                    # Get the expiration time from the access token
+                    refresh = RefreshToken(access_token)
+                    exp_time = refresh['exp']
+                    current_time = timezone.now()
+                    
+                    # If access token expires soon, refresh it
+                    if (exp_time - current_time).total_seconds() < settings.JWT_EXPIRY_INACTIVITY_LIMIT:
+                        return self.refresh_access_token(request)
+                    
+                except Exception as e:
+                    pass  # Handle errors (invalid token)
+        
+        response = self.get_response(request)
+        return response
+
+    def refresh_access_token(self, request):
+        """Function to refresh the access token if needed."""
+        refresh_token = request.COOKIES.get('refresh_token')
+        if not refresh_token:
+            return JsonResponse({"error": "Refresh token missing"}, status=400)
+
+        try:
+            # Create new access token
+            refresh = RefreshToken(refresh_token)
+            access_token = refresh.access_token
+            
+            # Set new access token in HTTP-only cookie
+            response = JsonResponse({"access_token": str(access_token)})
+            response.set_cookie(
+                'access_token', 
+                str(access_token), 
+                httponly=True, 
+                max_age=settings.SIMPLE_JWT['ACCESS_TOKEN_LIFETIME'],
+                secure=True, 
+                samesite='Strict'
+            )
+            return response
+        except Exception as e:
+            return JsonResponse({"error": "Invalid refresh token"}, status=401)
+
+Key Points:
+
+Access Token: Short-lived, used for authenticating requests. Can be refreshed using the refresh token.
+
+Refresh Token: Long-lived, used to obtain new access tokens without requiring the user to log in again.
+
+Track User Activity: You can refresh the access token based on user activity to prevent frequent logins, ensuring the session remains alive as long as the user is active.
+
+HTTP-only Cookies: Store both the access token and refresh token in HTTP-only cookies to keep them secure and automatically included in requests.

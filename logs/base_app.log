@@ -1,0 +1,117 @@
+Fetching tickets from the database for user 1
+HTTP GET /tickets/ 200 [0.08, 127.0.0.1:51923]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.02, 127.0.0.1:51925]
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching tickets from the database for user 1
+HTTP GET /tickets/ 200 [0.05, 127.0.0.1:53020]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:53024]
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching tickets from the database for user 1
+HTTP GET /tickets/ 200 [0.11, 127.0.0.1:56425]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:50264]
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+Ticket data fetched from cache for user 1: [{'title': 'Special Access', 'description': 'Microzen Special Access', 'status': 'solved', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'created_at': '2026-02-17T05:55:07.482743Z', 'updated_at': '2026-02-17T05:56:01.030181Z'}, {'title': 'Windows Update', 'description': 'Test', 'status': 'pending', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': None, 'created_at': '2026-02-16T09:20:08.152202Z', 'updated_at': '2026-02-16T09:20:08.152248Z'}]
+HTTP GET /tickets/ 200 [0.04, 127.0.0.1:54857]
+Fetching tickets from the database for user 1:None
+HTTP GET /tickets/ 200 [0.03, 127.0.0.1:58371]
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching tickets from the database for user 1
+HTTP GET /tickets/ 200 [0.08, 127.0.0.1:55038]
+Ticket data fetched from cache for user 1: [{'title': 'Special Access', 'description': 'Microzen Special Access', 'status': 'solved', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'created_at': '2026-02-17T05:55:07.482743Z', 'updated_at': '2026-02-17T05:56:01.030181Z'}, {'title': 'Windows Update', 'description': 'Test', 'status': 'pending', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': None, 'created_at': '2026-02-16T09:20:08.152202Z', 'updated_at': '2026-02-16T09:20:08.152248Z'}]
+HTTP GET /tickets/ 200 [0.02, 127.0.0.1:63691]
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching tickets from the database for user None
+Error fetching tickets for user None: 'AnonymousUser' object has no attribute 'role'
+Internal Server Error: /tickets/
+HTTP GET /tickets/ 500 [0.10, 127.0.0.1:63231]
+Fetching tickets from the database for user None
+Error fetching tickets for user None: 'AnonymousUser' object has no attribute 'role'
+Internal Server Error: /tickets/
+HTTP GET /tickets/ 500 [0.01, 127.0.0.1:63231]
+HTTP POST /api/login/ 200 [0.91, 127.0.0.1:63659]
+Fetching tickets from the database for user 1
+HTTP GET /tickets/ 200 [0.04, 127.0.0.1:55656]
+Fetching tickets from the database for user None
+Error fetching tickets for user None: 'AnonymousUser' object has no attribute 'role'
+Internal Server Error: /tickets/
+HTTP GET /tickets/ 500 [0.02, 127.0.0.1:55656]
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+Ticket data fetched from cache for user 1: [{'title': 'Special Access', 'description': 'Microzen Special Access', 'status': 'solved', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'created_at': '2026-02-17T05:55:07.482743Z', 'updated_at': '2026-02-17T05:56:01.030181Z'}, {'title': 'Windows Update', 'description': 'Test', 'status': 'pending', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': None, 'created_at': '2026-02-16T09:20:08.152202Z', 'updated_at': '2026-02-16T09:20:08.152248Z'}]
+HTTP GET /tickets/ 200 [0.07, 127.0.0.1:52554]
+Ticket data fetched from cache for user 1: [{'title': 'Special Access', 'description': 'Microzen Special Access', 'status': 'solved', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'created_at': '2026-02-17T05:55:07.482743Z', 'updated_at': '2026-02-17T05:56:01.030181Z'}, {'title': 'Windows Update', 'description': 'Test', 'status': 'pending', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': None, 'created_at': '2026-02-16T09:20:08.152202Z', 'updated_at': '2026-02-16T09:20:08.152248Z'}]
+HTTP GET /tickets/ 200 [0.03, 127.0.0.1:52554]

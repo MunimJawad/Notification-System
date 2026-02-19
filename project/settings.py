@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    
      'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
      "whitenoise.middleware.WhiteNoiseMiddleware",
@@ -56,10 +57,11 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+   
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+#'base.middleware.ActivityTimeoutMiddleware',
 REST_FRAMEWORK = {
 
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
@@ -75,11 +77,13 @@ REST_FRAMEWORK = {
 
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=180),  # Access token lifetime
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),  # Access token lifetime
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),  # Refresh token lifetime
     'ROTATE_REFRESH_TOKENS': True,  # Whether to rotate refresh tokens on use
     'BLACKLIST_AFTER_ROTATION': True,  # Optional: Blacklist the old refresh token after rotation
 }
+
+JWT_EXPIRY_INACTIVITY_LIMIT = 15 * 60 
 
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Notification System API',
@@ -138,6 +142,19 @@ CHANNEL_LAYERS = {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
             'hosts': [('127.0.0.1', 6379)],  # Redis default host and port
+            'database': 0
+        }
+    }
+}
+
+#Caching
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient"
         }
     }
 }
@@ -179,3 +196,35 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+
+
+# settings.py
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',  # Capture DEBUG level and above
+            'class': 'logging.FileHandler',
+            'filename': 'logs/base_app.log',  # Log file location
+        },
+        'console': {
+            'level': 'INFO',  # Capture INFO level and above for the console
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',  # Default level for Django logs
+            'propagate': True,
+        },
+        'base': {  # Your app logger
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',  # Capture DEBUG level and above for your app
+            'propagate': False,
+        },
+    },
+}

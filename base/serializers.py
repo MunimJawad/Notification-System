@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 from .services.user_service import create_user_service
-
+from . import models
 User = get_user_model()
 
 class CreateUserSerializer(serializers.ModelSerializer):
@@ -35,4 +35,18 @@ class CreateUserSerializer(serializers.ModelSerializer):
             role=validated_data.get('role'),
             created_by=request.user
         )
-        
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'role']
+
+class TicketSerializer(serializers.ModelSerializer):
+    creator = UserSerializer(read_only = True, source='created_by')
+    assignee = UserSerializer(read_only = False, required= False, source = 'assigned_to')
+    class Meta:
+        model = models.Ticket
+        fields = [
+            'title', 'description', 'status', 'creator', 'assignee',
+            'created_at', 'updated_at'
+        ]

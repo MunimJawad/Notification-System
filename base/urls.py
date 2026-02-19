@@ -7,4 +7,6 @@ urlpatterns = [
    path('create-user/',views.CreateUserView.as_view(),name="create_user"),
    path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+
+   path('tickets/',views.TicketListView.as_view(), name="ticket-list")
 ]

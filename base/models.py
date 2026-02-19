@@ -15,10 +15,13 @@ class User(AbstractUser, SoftDeleteModel):
     ]
     email = models.EmailField(unique=True)
     role = models.CharField(max_length=30, choices=STATUS_CHOICES, default=USER)
-
+    
+    last_activity_time = models.DateTimeField(default=timezone.now)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-  
+    
+    def update_last_activity_time(self):
+        self.__class__.objects.filter(pk=self.pk).update(last_activity_time = timezone.now())
 
     def __str__(self):
         return f"Username:{self.username} --Email: {self.email}"
@@ -55,10 +58,10 @@ class Notifications(SoftDeleteModel):
         ('ticket_created', 'Ticket Created'),
         ('ticket_status_updated', 'Ticket Status Updated'),
     ]
-    users = models.ManyToManyField(User, related_name="notifications")
+    users = models.ManyToManyField(User, related_name="user_notifications")
     notification_type = models.CharField(max_length=40, choices=NOTIFICATION_TYPES)
     title = models.CharField(max_length=200)
-    ticket = models.ForeignKey(Ticket, on_delete=models.CASCADE, related_name="notifications")
+    ticket = models.ForeignKey(Ticket, on_delete=models.CASCADE, related_name="ticket_notifications")
     created_at = models.DateTimeField(auto_now_add= True)
     updated_at = models.DateTimeField(auto_now=True)
 
