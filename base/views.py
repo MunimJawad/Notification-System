@@ -39,18 +39,35 @@ class CreateUserView(APIView):
 
 
 @extend_schema_view(
-  get = schema_for_method(summary="Ticket List", description="Fetch ticket list based on permission", request=None, responses={200:serializers.TicketSerializer},tags=["Ticket Management"])
+  get = schema_for_method(summary="Ticket List", description="Fetch ticket list based on permission", request=None, responses={200:serializers.TicketSerializer},tags=["Ticket Management"]),
+  post = schema_for_method(summary="Create Ticket", description="Create Ticket", request=serializers.TicketSerializer, responses={200:serializers.TicketSerializer},tags=["Ticket Management"])
 )
 class TicketListView(APIView):
     permission_classes = [IsAuthenticated]
-    def get(self, request):
-        user = request.user               
-        try:
-            data = TicketService.get_tickets_for_user(user)
-            return Response(data, status=status.HTTP_200_OK)        
-        except Exception as e:
-            logger.error(f"Error fetching tickets for user {user.id}: {str(e)}")
-            return Response({"error": "Internal Server Error"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-            
-       
+    def get(self, request):
+        cache_key = f"ticket_list_user_{request.user.id}"
+        data = cache.get(cache_key)
+
+        if not data:
+            logger.info(f"Fetching tickets from DB for user {request.user.id}")
+            tickets = TicketService.get_tickets_for_user(request.user)
+            serializer = serializers.TicketSerializer(tickets, many=True, context={"request": request})
+            data = serializer.data
+            cache.set(cache_key, data, timeout=120)
+        else:
+            logger.info(f"Ticket data fetched from cache for user {request.user.id}")
+
+        return Response(data, status=status.HTTP_200_OK)
+        
+    def post(self, request):        
+        serializer = serializers.TicketSerializer(
+            data=request.data,
+            context={"request": request}
+        )
+
+        serializer.is_valid(raise_exception=True)
+        ticket = serializer.save()
+
+        return Response(serializers.TicketSerializer(ticket).data, status=status.HTTP_201_CREATED)
+      

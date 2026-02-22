@@ -66,7 +66,7 @@ class Notifications(SoftDeleteModel):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.title}"
+        return f"{self.notification_type}:----{self.title}"
     
 class Audit(SoftDeleteModel):
     ACTION_CHOICES = [

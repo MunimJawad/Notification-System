@@ -1,6 +1,5 @@
 from django.core.cache import cache
 from ..models import Ticket
-from ..serializers import TicketSerializer
 from django.conf import settings
 import logging
 
@@ -9,21 +8,20 @@ logger = logging.getLogger('base')
 class TicketService:
     @staticmethod
     def get_tickets_for_user(user):
-        
-        cache_key = f"ticket_list_user_{user.id}"
-        data = cache.get(cache_key) 
+          if user.role == "admin":
+              return Ticket.objects.select_related('created_by', 'assigned_to').all()
+          return Ticket.objects.select_related('created_by', 'assigned_to').filter(created_by=user)
+    
+    @staticmethod
+    def create_ticket(user, validated_data):
+        assigned_to = validated_data.pop("assigned_to", None)
 
-        if not data:
-            logger.info(f"Fetching tickets from the database for user {user.id}")
-            if user.role == "admin":
-               tickets = Ticket.objects.select_related('created_by', 'assigned_to').all()
-            else:
-                tickets = Ticket.objects.select_related('created_by', 'assigned_to').filter(created_by=request.user)        
+        ticket = Ticket.objects.create(
+            assigned_to = assigned_to,
+            created_by = user,
+            **validated_data
+        )
 
-            serializer = TicketSerializer(tickets, many=True)
+        cache.delete(f"ticket_list_user_{user.id}")
 
-            data = serializer.data
-            cache.set(cache_key, data, timeout=120)
-        else:
-            logger.info(f"Ticket data fetched from cache for user {user.id}: {data}") 
-        return data
+        return ticket

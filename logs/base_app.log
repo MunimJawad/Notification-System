@@ -115,3 +115,1005 @@ Ticket data fetched from cache for user 1: [{'title': 'Special Access', 'descrip
 HTTP GET /tickets/ 200 [0.07, 127.0.0.1:52554]
 Ticket data fetched from cache for user 1: [{'title': 'Special Access', 'description': 'Microzen Special Access', 'status': 'solved', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'created_at': '2026-02-17T05:55:07.482743Z', 'updated_at': '2026-02-17T05:56:01.030181Z'}, {'title': 'Windows Update', 'description': 'Test', 'status': 'pending', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': None, 'created_at': '2026-02-16T09:20:08.152202Z', 'updated_at': '2026-02-16T09:20:08.152248Z'}]
 HTTP GET /tickets/ 200 [0.03, 127.0.0.1:52554]
+Watching for file changes with StatReloader
+Not Found: /
+HTTP GET / 404 [0.07, 127.0.0.1:61620]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:61620]
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /tickets/
+HTTP GET /tickets/ 401 [0.08, 127.0.0.1:55522]
+Not Found: /
+HTTP GET / 404 [0.10, 127.0.0.1:64742]
+HTTP GET /admin/ 200 [0.26, 127.0.0.1:64742]
+HTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:64742]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:60608]
+HTTP GET /static/admin/js/theme.js 304 [0.01, 127.0.0.1:62731]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.00, 127.0.0.1:62731]
+HTTP GET /static/admin/css/dashboard.css 304 [0.01, 127.0.0.1:64742]
+HTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:60608]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:62731]
+HTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:62731]
+HTTP GET /static/admin/img/icon-changelink.svg 304 [0.00, 127.0.0.1:60608]
+HTTP GET /api/docs/ 200 [0.13, 127.0.0.1:62731]
+HTTP GET /api/schema/ 200 [0.06, 127.0.0.1:62731]
+HTTP POST /api/login/ 200 [0.98, 127.0.0.1:62731]
+Fetching tickets from the database for user 1
+HTTP GET /tickets/ 200 [0.04, 127.0.0.1:62731]
+Fetching tickets from the database for user 1
+HTTP GET /tickets/ 200 [0.02, 127.0.0.1:49666]
+Ticket data fetched from cache for user 1: [{'title': 'Special Access', 'description': 'Microzen Special Access', 'status': 'solved', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'created_at': '2026-02-17T05:55:07.482743Z', 'updated_at': '2026-02-17T05:56:01.030181Z'}, {'title': 'Windows Update', 'description': 'Test', 'status': 'pending', 'creator': {'id': 1, 'username': 'root', 'email': 'root@example.com', 'role': 'admin'}, 'assignee': None, 'created_at': '2026-02-16T09:20:08.152202Z', 'updated_at': '2026-02-16T09:20:08.152248Z'}]
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:49666]
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP GET /api/docs/ 200 [0.06, 127.0.0.1:53235]
+HTTP GET /api/schema/ 200 [0.07, 127.0.0.1:53235]
+HTTP POST /api/login/ 200 [0.97, 127.0.0.1:57036]
+Bad Request: /tickets/
+HTTP POST /tickets/ 400 [0.04, 127.0.0.1:49862]
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTP GET /api/docs/ 200 [0.04, 127.0.0.1:56551]
+Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\base.py", line 254, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 506, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 561, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 84, in get
+    return self._get_schema_response(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 92, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 287, in get_schema
+    paths=self.parse(request, public),
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 258, in parse
+    operation = view.schema.get_operation(
+        path, path_regex, path_prefix, method, self.registry
+    )
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\utils.py", line 451, in get_operation
+    return super().get_operation(path, path_regex, path_prefix, method, registry)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 113, in get_operation
+    operation['responses'] = self._get_response_bodies()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1416, in _get_response_bodies
+    content_response = self._get_response_for_code(serializer, code, media_types, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1463, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1658, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 959, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1052, in _map_basic_serializer
+    for field in serializer.fields.values():
+                 ^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\serializers.py", line 375, in fields
+    fields[key] = value
+    ~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\utils\serializer_helpers.py", line 165, in __setitem__
+    field.bind(field_name=key, parent=self.serializer)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\fields.py", line 358, in bind
+    assert self.source != field_name, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: It is redundant to specify `source='assigned_to'` on field 'PrimaryKeyRelatedField' in serializer 'TicketSerializer', because it is the same as the field name. Remove the `source` keyword argument.
+HTTP GET /api/schema/ 500 [0.50, 127.0.0.1:56551]
+Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\base.py", line 254, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 506, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 561, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 84, in get
+    return self._get_schema_response(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 92, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 287, in get_schema
+    paths=self.parse(request, public),
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 258, in parse
+    operation = view.schema.get_operation(
+        path, path_regex, path_prefix, method, self.registry
+    )
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\utils.py", line 451, in get_operation
+    return super().get_operation(path, path_regex, path_prefix, method, registry)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 113, in get_operation
+    operation['responses'] = self._get_response_bodies()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1416, in _get_response_bodies
+    content_response = self._get_response_for_code(serializer, code, media_types, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1463, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1658, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 959, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1052, in _map_basic_serializer
+    for field in serializer.fields.values():
+                 ^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\serializers.py", line 375, in fields
+    fields[key] = value
+    ~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\utils\serializer_helpers.py", line 165, in __setitem__
+    field.bind(field_name=key, parent=self.serializer)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\fields.py", line 358, in bind
+    assert self.source != field_name, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: It is redundant to specify `source='assigned_to'` on field 'PrimaryKeyRelatedField' in serializer 'TicketSerializer', because it is the same as the field name. Remove the `source` keyword argument.
+HTTP GET /api/schema/ 500 [0.06, 127.0.0.1:56551]
+HTTP GET /api/docs/ 200 [0.01, 127.0.0.1:56551]
+Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\base.py", line 254, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 506, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 561, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 84, in get
+    return self._get_schema_response(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 92, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 287, in get_schema
+    paths=self.parse(request, public),
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 258, in parse
+    operation = view.schema.get_operation(
+        path, path_regex, path_prefix, method, self.registry
+    )
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\utils.py", line 451, in get_operation
+    return super().get_operation(path, path_regex, path_prefix, method, registry)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 113, in get_operation
+    operation['responses'] = self._get_response_bodies()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1416, in _get_response_bodies
+    content_response = self._get_response_for_code(serializer, code, media_types, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1463, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1658, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 959, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1052, in _map_basic_serializer
+    for field in serializer.fields.values():
+                 ^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\serializers.py", line 375, in fields
+    fields[key] = value
+    ~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\utils\serializer_helpers.py", line 165, in __setitem__
+    field.bind(field_name=key, parent=self.serializer)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\fields.py", line 358, in bind
+    assert self.source != field_name, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: It is redundant to specify `source='assigned_to'` on field 'PrimaryKeyRelatedField' in serializer 'TicketSerializer', because it is the same as the field name. Remove the `source` keyword argument.
+HTTP GET /api/schema/ 500 [0.10, 127.0.0.1:56551]
+Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\base.py", line 254, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 506, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 561, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 84, in get
+    return self._get_schema_response(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 92, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 287, in get_schema
+    paths=self.parse(request, public),
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 258, in parse
+    operation = view.schema.get_operation(
+        path, path_regex, path_prefix, method, self.registry
+    )
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\utils.py", line 451, in get_operation
+    return super().get_operation(path, path_regex, path_prefix, method, registry)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 113, in get_operation
+    operation['responses'] = self._get_response_bodies()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1416, in _get_response_bodies
+    content_response = self._get_response_for_code(serializer, code, media_types, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1463, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1658, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 959, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1052, in _map_basic_serializer
+    for field in serializer.fields.values():
+                 ^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\serializers.py", line 375, in fields
+    fields[key] = value
+    ~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\utils\serializer_helpers.py", line 165, in __setitem__
+    field.bind(field_name=key, parent=self.serializer)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\fields.py", line 358, in bind
+    assert self.source != field_name, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: It is redundant to specify `source='assigned_to'` on field 'PrimaryKeyRelatedField' in serializer 'TicketSerializer', because it is the same as the field name. Remove the `source` keyword argument.
+HTTP GET /api/schema/ 500 [0.10, 127.0.0.1:56551]
+Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 557, in thread_handler
+    raise exc_info[1]
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\core\handlers\base.py", line 254, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 506, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\asgiref\sync.py", line 561, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 84, in get
+    return self._get_schema_response(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\views.py", line 92, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 287, in get_schema
+    paths=self.parse(request, public),
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\generators.py", line 258, in parse
+    operation = view.schema.get_operation(
+        path, path_regex, path_prefix, method, self.registry
+    )
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\utils.py", line 451, in get_operation
+    return super().get_operation(path, path_regex, path_prefix, method, registry)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 113, in get_operation
+    operation['responses'] = self._get_response_bodies()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1416, in _get_response_bodies
+    content_response = self._get_response_for_code(serializer, code, media_types, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1463, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1658, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 959, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\drf_spectacular\openapi.py", line 1052, in _map_basic_serializer
+    for field in serializer.fields.values():
+                 ^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\serializers.py", line 375, in fields
+    fields[key] = value
+    ~~~~~~^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\utils\serializer_helpers.py", line 165, in __setitem__
+    field.bind(field_name=key, parent=self.serializer)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OnePadakhep\notifications_system\venv\Lib\site-packages\rest_framework\fields.py", line 358, in bind
+    assert self.source != field_name, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: It is redundant to specify `source='assigned_to'` on field 'PrimaryKeyRelatedField' in serializer 'TicketSerializer', because it is the same as the field name. Remove the `source` keyword argument.
+HTTP GET /api/schema/ 500 [0.09, 127.0.0.1:56551]
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP GET /api/docs/ 200 [0.04, 127.0.0.1:53052]
+HTTP GET /api/schema/ 200 [0.06, 127.0.0.1:53052]
+HTTP POST /api/login/ 200 [0.99, 127.0.0.1:53052]
+HTTP POST /tickets/ 201 [0.04, 127.0.0.1:49321]
+Fetching tickets from the database for user 1
+HTTP GET /tickets/ 200 [0.03, 127.0.0.1:49321]
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\apps.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching tickets from DB for user 1
+HTTP GET /tickets/ 200 [0.07, 127.0.0.1:54670]
+HTTP POST /tickets/ 201 [0.02, 127.0.0.1:54670]
+Fetching tickets from DB for user 1
+HTTP GET /tickets/ 200 [0.04, 127.0.0.1:54670]
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.06, 127.0.0.1:58211]
+HTTP POST /tickets/ 201 [0.05, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.02, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.02, 127.0.0.1:58211]
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.01, 127.0.0.1:58211]
+Fetching tickets from DB for user 1
+HTTP GET /tickets/ 200 [0.04, 127.0.0.1:58211]
+D:\OnePadakhep\notifications_system\base\services\ticket_service.py changed, reloading.
+Watching for file changes with StatReloader
+Ticket data fetched from cache for user 1
+HTTP GET /tickets/ 200 [0.07, 127.0.0.1:52636]
+HTTP POST /tickets/ 201 [0.06, 127.0.0.1:52636]
+Fetching tickets from DB for user 1
+HTTP GET /tickets/ 200 [0.04, 127.0.0.1:52636]
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+HTTP GET / 404 [0.03, 127.0.0.1:63779]
+HTTP GET /admin/ 200 [0.11, 127.0.0.1:63779]
+HTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:58325]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:58513]
+HTTP GET /static/admin/css/dashboard.css 304 [0.02, 127.0.0.1:59678]
+HTTP GET /static/admin/js/theme.js 304 [0.02, 127.0.0.1:65346]
+HTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:52495]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:52495]
+HTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:52495]
+HTTP GET /static/admin/img/icon-changelink.svg 304 [0.00, 127.0.0.1:65346]
+HTTP GET /admin/base/ticket/ 200 [0.36, 127.0.0.1:52495]
+HTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:52495]
+HTTP GET /static/admin/js/theme.js 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:65346]
+HTTP GET /static/admin/css/changelists.css 304 [0.01, 127.0.0.1:58325]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.01, 127.0.0.1:58513]
+HTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:52495]
+HTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:58325]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:59678]
+HTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:58513]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:65346]
+HTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:52495]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:58325]
+HTTP GET /static/admin/img/search.svg 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:63779]
+HTTP GET /static/admin/js/filters.js 304 [0.00, 127.0.0.1:63779]
+HTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:59678]
+HTTP GET /static/admin/img/icon-viewlink.svg 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/img/tooltag-add.svg 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/img/sorting-icons.svg 304 [0.01, 127.0.0.1:58325]
+HTTP GET /admin/base/notifications/ 200 [0.04, 127.0.0.1:58325]
+HTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:58325]
+HTTP GET /static/admin/js/theme.js 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.01, 127.0.0.1:52495]
+HTTP GET /static/admin/css/changelists.css 304 [0.01, 127.0.0.1:58513]
+HTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:58325]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:63779]
+HTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:52495]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:58513]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.03, 127.0.0.1:59678]
+HTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:58325]
+HTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:63779]
+HTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:65346]
+HTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:58513]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:52495]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:52495]
+HTTP GET /static/admin/js/filters.js 304 [0.01, 127.0.0.1:65346]
+HTTP GET /admin/base/notifications/1/change/ 200 [0.26, 127.0.0.1:65346]
+HTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:65346]
+HTTP GET /static/admin/js/theme.js 304 [0.01, 127.0.0.1:58513]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/css/forms.css 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:52495]
+HTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:65346]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.01, 127.0.0.1:58513]
+HTTP GET /static/admin/js/admin/DateTimeShortcuts.js 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/js/calendar.js 304 [0.01, 127.0.0.1:52495]
+HTTP GET /static/admin/css/widgets.css 304 [0.02, 127.0.0.1:65346]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:58513]
+HTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:63779]
+HTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52495]
+HTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:58325]
+HTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:65346]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:58513]
+HTTP GET /static/admin/js/prepopulate_init.js 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:58513]
+HTTP GET /static/admin/img/icon-changelink.svg 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:65346]
+HTTP GET /static/admin/js/change_form.js 304 [0.01, 127.0.0.1:58325]
+HTTP GET /static/admin/img/icon-calendar.svg 304 [0.01, 127.0.0.1:59678]
+HTTP GET /static/admin/img/icon-clock.svg 304 [0.01, 127.0.0.1:58325]
+HTTP GET /admin/base/notifications/ 200 [0.03, 127.0.0.1:58325]
+D:\OnePadakhep\notifications_system\base\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\models.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP POST /tickets/ 201 [0.11, 127.0.0.1:49666]
+Fetching tickets from DB for user 1
+HTTP GET /tickets/ 200 [0.02, 127.0.0.1:49666]
+HTTP GET /admin/base/notifications/ 200 [0.13, 127.0.0.1:49666]
+HTTP GET /static/admin/css/base.css 304 [0.02, 127.0.0.1:49666]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:52943]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:50273]
+HTTP GET /static/admin/js/theme.js 304 [0.02, 127.0.0.1:50499]
+HTTP GET /static/admin/css/changelists.css 304 [0.02, 127.0.0.1:55982]
+HTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:49666]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:50273]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52943]
+HTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:55982]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:50499]
+HTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:49666]
+HTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:52943]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:55982]
+HTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:50273]
+HTTP GET /admin/jsi18n/ 200 [0.07, 127.0.0.1:50709]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:50273]
+HTTP GET /static/admin/js/filters.js 304 [0.01, 127.0.0.1:50709]
+HTTP GET /admin/base/notifications/2/change/ 200 [0.06, 127.0.0.1:50709]
+HTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:50709]
+HTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:50273]
+HTTP GET /static/admin/js/theme.js 304 [0.02, 127.0.0.1:52943]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:55982]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.01, 127.0.0.1:50499]
+HTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:50709]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:50273]
+HTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:55982]
+HTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:52943]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:50499]
+HTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:50709]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:55982]
+HTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:50273]
+HTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:49666]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:50273]
+HTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:49666]
+HTTP GET /static/admin/img/icon-changelink.svg 304 [0.00, 127.0.0.1:49666]
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\OnePadakhep\notifications_system\base\signals.py changed, reloading.
+Watching for file changes with StatReloader

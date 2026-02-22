@@ -4,6 +4,7 @@ from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 from .services.user_service import create_user_service
 from . import models
+from .services import ticket_service
 User = get_user_model()
 
 class CreateUserSerializer(serializers.ModelSerializer):
@@ -41,12 +42,26 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ['id', 'username', 'email', 'role']
 
+
+
 class TicketSerializer(serializers.ModelSerializer):
     creator = UserSerializer(read_only = True, source='created_by')
-    assignee = UserSerializer(read_only = False, required= False, source = 'assigned_to')
+    assignee = UserSerializer(read_only = True, source = 'assigned_to')
+     
+    assigned_to = serializers.PrimaryKeyRelatedField(queryset = models.User.objects.all(),
+                                                    
+                                                     required = False,
+                                                     write_only = True)
+    description = serializers.CharField(required = False)
+
     class Meta:
         model = models.Ticket
         fields = [
-            'title', 'description', 'status', 'creator', 'assignee',
+            'title', 'description', 'status', 'creator', 'assignee','assigned_to',
             'created_at', 'updated_at'
         ]
+
+    def create(self, validated_data):
+       
+       user = self.context["request"].user
+       return ticket_service.TicketService.create_ticket(user, validated_data)
