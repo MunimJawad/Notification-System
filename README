@@ -7,24 +7,41 @@ This system can be integrated with any backend (like a ticketing system, eCommer
 
 ## 🚀 Features
 
+- Authentication using jwt
 - Send notifications in real-time via WebSockets
 - Redis-backed channel layer for scalability
 - Support for multiple users and groups
 - Event-driven design: Notifications can be triggered by signals
 - Read/unread notifications support
+- Logging for Debugging and Troubleshooting, Monitoring and Track Performance, Security and Audit.
 - Easy integration with other projects
 
+For this demonstration, I've used a **Ticketing System** with the following features:
+- **Ticket List with Caching** to enhance performance
 ---
 
 ## 🏗️ Tech Stack
 
 - **Backend:** Python, Django, Django REST Framework
 - **Real-Time:** Django Channels, WebSockets
+- **Caching:** Redis
 - **Message Broker:** Redis
 - **ASGI Server:** Daphne
 - **Frontend (for demo/testing):** JavaScript, Fetch API, modals (can integrate with Laravel or any frontend)
 
 ---
 
+## Details 
+
+- ** Authentication with jwt **:
+  - Implemented JWT (JSON Web Token) authentication to securely authenticate users and protect sensitive data. This ensures that only authorized users can access or modify ticket data. 
+
+- **Ticket List with Caching**: 
+  - Caches ticket data for each user, avoiding repetitive database queries and improving application performance. Cache expiration time is configurable.
+  
+- **Logging**:
+  - Tracks **cache hits and misses**, **database queries**, and **errors**. Logs are stored in a log file and can also be output to the console for real-time monitoring.
+
+---
 ## 🧠 System Architecture
 
