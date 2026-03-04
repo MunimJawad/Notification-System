@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notifications</title>
+</head>
+<body>
+
+   <h1>Notifications <span id="notif_count" style="color:red;">0</span></h1>
+
+    <!-- Existing notifications from Django -->
+    <div id="notification_list" >
+        {% for n in notifi %}
+            <h2>{{ n.title }}</h2>
+        {% endfor %}
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Connect to WebSocket
+            const socket = new WebSocket("ws://127.0.0.1:8000/ws/notifications/");
+
+            const list = document.getElementById("notification_list");
+           
+            socket.onopen = function () {
+                console.log("✅ WebSocket connected");
+            };
+             let count = 0;
+            socket.onmessage = function (e) {
+                console.log("RAW DATA:", e.data);
+
+                 count++;
+    document.getElementById("notif_count").textContent = count;
+
+                const data = JSON.parse(e.data);
+                console.log("PARSED:", data);
+
+                // Create new notification element
+                const ele = document.createElement("h2");
+                ele.textContent = "🔔 Alert: " + data.message;
+
+                // Optional: make new messages stand out
+                ele.style.color = "green";
+
+                // Append to list
+                list.prepend(ele);
+
+                console.log("✅ Notification appended");
+            };
+
+            socket.onclose = function (e) {
+                console.log("❌ WebSocket disconnected", e.code);
+            };
+
+            socket.onerror = function (e) {
+                console.error("⚠ WebSocket error", e);
+            };
+
+        });
+    </script>
+
+</body>
+</html>

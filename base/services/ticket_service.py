@@ -7,10 +7,8 @@ logger = logging.getLogger('base')
 
 class TicketService:
     @staticmethod
-    def get_tickets_for_user(user):
-          if user.role == "admin":
-              return Ticket.objects.select_related('created_by', 'assigned_to').all()
-          return Ticket.objects.select_related('created_by', 'assigned_to').filter(created_by=user)
+    def get_tickets_for_user(user):          
+          return Ticket.objects.for_user(user)
     
     @staticmethod
     def create_ticket(user, validated_data):

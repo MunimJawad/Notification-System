@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
-from .modelUtils import SoftDeleteModel
+from .modelUtils import SoftDeleteModel, TicketQuerySet
     
 class User(AbstractUser, SoftDeleteModel):
     USER = 'user'
@@ -37,6 +37,8 @@ class Ticket(SoftDeleteModel):
         (SOLVED, 'Solved'),
         (FAILED, 'Failed')
     ]
+
+    objects = TicketQuerySet.as_manager()
 
     title = models.CharField(max_length=100)
     description = models.TextField(null=True, blank=True)

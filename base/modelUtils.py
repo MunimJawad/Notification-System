@@ -46,3 +46,15 @@ class SoftDeleteModel(models.Model):
         self.save(update_fields=["deleted_at"])
     def is_deleted(self):
         return self.deleted_at is not None
+    
+
+
+class TicketQuerySet(models.QuerySet):
+    def with_related(self):
+        return self.select_related('created_by', 'assigned_to')
+    
+    def for_user(self,user):
+        qs = self.with_related()
+        if user.role == "admin":
+            return qs
+        return qs.filter(created_by=user)

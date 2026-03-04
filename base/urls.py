@@ -8,5 +8,7 @@ urlpatterns = [
    path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
-   path('tickets/',views.TicketListView.as_view(), name="ticket-list")
+   path('tickets/',views.TicketListView.as_view(), name="ticket-list"),
+
+   path('list/',views.NotificationList.as_view(), name='list')
 ]

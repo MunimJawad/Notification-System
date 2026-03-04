@@ -48,8 +48,7 @@ class TicketSerializer(serializers.ModelSerializer):
     creator = UserSerializer(read_only = True, source='created_by')
     assignee = UserSerializer(read_only = True, source = 'assigned_to')
      
-    assigned_to = serializers.PrimaryKeyRelatedField(queryset = models.User.objects.all(),
-                                                    
+    assigned_to = serializers.PrimaryKeyRelatedField(queryset = models.User.objects.all(),                                                    
                                                      required = False,
                                                      write_only = True)
     description = serializers.CharField(required = False)
@@ -65,3 +64,5 @@ class TicketSerializer(serializers.ModelSerializer):
        
        user = self.context["request"].user
        return ticket_service.TicketService.create_ticket(user, validated_data)
+
+

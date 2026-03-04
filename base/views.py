@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from drf_spectacular.utils import extend_schema_view
-from rest_framework.views import APIView
+from rest_framework.views import APIView,View
 from rest_framework.permissions import IsAuthenticated,IsAdminUser
 from rest_framework.response import Response
 from rest_framework import status
@@ -43,8 +43,7 @@ class CreateUserView(APIView):
   post = schema_for_method(summary="Create Ticket", description="Create Ticket", request=serializers.TicketSerializer, responses={200:serializers.TicketSerializer},tags=["Ticket Management"])
 )
 class TicketListView(APIView):
-    permission_classes = [IsAuthenticated]
-
+   
     def get(self, request):
         cache_key = f"ticket_list_user_{request.user.id}"
         data = cache.get(cache_key)
@@ -70,4 +69,10 @@ class TicketListView(APIView):
         ticket = serializer.save()
 
         return Response(serializers.TicketSerializer(ticket).data, status=status.HTTP_201_CREATED)
-      
+
+
+class NotificationList(View):
+    
+    def get(self, request):
+        notifications = models.Notifications.objects.all().order_by('-created_at')
+        return render(request, 'notify.html', context={'notifi':notifications})
